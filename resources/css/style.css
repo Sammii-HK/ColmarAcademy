@@ -1,3 +1,86 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*  Global Style  */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: raleway, helvetica, sans-serif;
+}
+
+
+/*  Top Navigation Bar  */
+
+.top-nav {
+	width: 100%;
+	height: 64px;
+	display: inline-flex;
+	margin: auto 0;	
+}
+
+.logo {
+	padding: 0;
+	margin: 0;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+	padding-left: 24px;
+}
+
+.top-nav h1 {
+	font-size: 28px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.top-nav span {
+	font-weight: 900;
+}
+
+nav {
+	
+}
+
+.desktop-nav {
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: auto;
+	padding-right: 24px;
+	
+	float: right;
+	align-content: flex-end;
+}
+
+.desktop-nav a {
+	padding-left: 16px;
+}
+
+.mobile-nav {
+	
+}
+
+.mob-nav-img {
+	
+}
+
+@media only screen and (max-width:2000px) {
+	.mobile-nav {
+		display: none;
+	}
+}
+
+
+/*  Content  */
+
+.content {
+	max-width: 960px;
+	width: 100%;
+}
