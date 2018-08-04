@@ -11,6 +11,26 @@ html {
 
 body {
 	font-family: raleway, helvetica, sans-serif;
+	color: #333333;
+}
+
+body,
+.content,
+h1,
+h2,
+h3,
+p,
+a {
+	
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.content {
+	background-color: #CCCCCC;
 }
 
 
@@ -21,27 +41,37 @@ body {
 	height: 64px;
 	display: inline-flex;
 	margin: auto 0;	
+	justify-content: space-between;
+	background-color: white;
 }
 
 .logo {
 	padding: 0;
 	margin: 0;
-}
-
-.logo img {
-	width: 100%;
-	height: auto;
-	padding-left: 24px;
-}
-
-.top-nav h1 {
-	font-size: 28px;
+	width: auto;
 	display: inline-flex;
 	align-items: center;
 }
 
-.top-nav span {
+.logo-icon {
+	width: auto;
+	height: 50px;
+	padding-left: 24px;
+	display: inline-flex;
+	
+	align-items: center;
+}
+
+.logo h1 {
+	font-size: 22px;
+	display: inline-flex;
+	align-items: center;
 	font-weight: 900;
+}
+
+.logo span {
+	font-weight: 500;
+	color: #999999;
 }
 
 nav {
