@@ -21,13 +21,14 @@ h2,
 h3,
 p,
 a {
-	
+	letter-spacing: .3pt;
+	line-height: 15pt;
 }
 
 h1 {
 	font-size: 26.25px;
 	font-weight: 800;
-	letter-spacing: .3pt;
+	line-height: 30px;
 }
 
 a {
@@ -40,7 +41,7 @@ a {
 	max-width: 960px;
 	width: 100%;
 	margin: auto;
-	padding: 0px
+	padding: 0px;
 }
 
 .image {
@@ -49,6 +50,110 @@ a {
 	margin: 32px 24px;
 }
 
+
+.course-container {
+	padding: 32px 72px;
+}
+
+.page-desktop {
+	background-color: #FFFFFF;
+	display: flex; /*inline-flex*/
+	width: 100%;	
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 633) {
+	.page-desktop {
+		flex-direction: column;
+	}
+}
+
+.page-main {
+	width: 60%;
+	padding: 32px 24px;
+}
+
+.page-main h1 {
+	padding-top: 32px;
+	padding-bottom: 24px;
+}
+
+.page-main p {
+	font-size: 14px;
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+.page-image {
+	height: 325px;
+	width: 100%;
+	background-size: cover;
+}
+
+.page-list {
+	width: 35%;
+	display: inline-flex;
+	flex-direction: column;
+	padding-top: 32px;
+}
+
+.page-item {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 99%;
+	height: 29%;
+	border: .25px solid #cccccc;
+}
+
+.item-image {
+	width: 35%;
+	height: auto;
+	background-size: cover;
+	margin: 16px;
+}
+
+.information {
+	width: 65%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.information h2 {
+	font-size: 14.5px;
+	font-weight: 600;
+}
+
+.information p {
+	padding: 8px 0;
+	padding-right: 15px;
+	font-size: 10px;
+	line-height: 1.6;
+	font-weight: 400;
+	letter-spacing: .45pt;
+}
+
+.information a {
+	font-size: 12px;
+	color: #3399CC;
+	letter-spacing: .5pt;
+}
+
+.padding-right {
+	padding-right: 32px;
+} 
+
+.light-grey {
+	background-color: #cccccc;
+}
+
+.title {
+	text-align: center;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+}
 
 /*  Top Navigation Bar  */
 
@@ -82,7 +187,8 @@ a {
 	font-size: 22px;
 	display: inline-flex;
 	align-items: center;
-	font-weight: 900;
+	font-weight: 700;
+	letter-spacing: 0.5pt;
 }
 
 .logo span {
@@ -166,38 +272,11 @@ nav {
 	text-align: center;
 }
 
+
 /*  Academy Page  */
-
-.academy-desktop {
-	background-color: #FFFFFF;
-	display: inline-flex;
-	width: 100%;
-}
-
-.academy-main {
-	width: 60%;
-	padding: 32px 24px;
-}
 
 .academy {
 	background-image: url(../images/information-main.jpg);
-	height: 325px;
-	width: 100%;
-	background-size: cover;
-	
-	margin: 0;
-	padding: 0;
-}
-
-.academy-main h1 {
-	padding-top: 32px;
-	padding-bottom: 24px;
-}
-
-.academy-main p {
-	font-size: 14px;
-	line-height: 1.4;
-	font-weight: 400;
 }
 
 #citation {
@@ -206,32 +285,6 @@ nav {
 	font-weight: 500;
 	color: #333333;
 	letter-spacing: .1pt;
-}
-
-.academy-list {
-	width: 35%;
-	display: inline-flex;
-	flex-direction: column;
-	padding-top: 16px;
-}
-
-.academy-item {
-	display: inline-flex;
-	justify-content: space-between;
-	width: 99%;
-	height: 29%;
-	border: .25px solid #cccccc;
-}
-
-.light-grey {
-	background-color: #cccccc;
-}
-
-.item-image {
-	width: 35%;
-	height: auto;
-	background-size: cover;
-	margin: 16px;
 }
 
 .orientation {
@@ -246,33 +299,6 @@ nav {
 	background-image: url(../images/information-guest-lecture.jpg);
 }
 
-.information {
-	width: 65%;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.information h2 {
-	font-size: 14.5px;
-	font-weight: 600;
-}
-
-.information p {
-	padding: 8px 0;
-	padding-right: 15px;
-	font-size: 10px;
-	line-height: 1.6;
-	font-weight: 400;
-	letter-spacing: .45pt;
-}
-
-.information a {
-	font-size: 12px;
-	color: #3399CC;
-	letter-spacing: .5pt;
-}
-
 
 /*  Start Learning Page  */
 
@@ -280,15 +306,6 @@ nav {
 	width: 100%;
 	display: inline-flex;
 	flex-direction: column;
-	
-	/*
-	padding: 32px 56px; */
-}
-
-.start-learning h1 {
-	text-align: center;
-	padding-bottom: 32px;
-	width: auto;
 }
 
 .desktop {
@@ -296,21 +313,12 @@ nav {
 	width: 100%;
 	flex-wrap: wrap;
 }
-
-.course-container {
-	padding: 32px 72px;
-}
-
 .course {
 	background-color: #ffffff;
 	display: inline-flex;
 	flex-direction: column;
 	width: 30%;
 	margin: 10px;
-}
-
-.padding-right {
-	padding-right: 32px;
 }
 
 .course-image {
@@ -364,4 +372,45 @@ nav {
 	font-size: 12px;
 	letter-spacing: .35pt;
 	line-height: 14pt;
+}
+
+
+/*  Thesis Exhibit Page  */
+
+.thesis-exhibit {
+	background-color: #ffffff;
+	padding-top: 32px;
+	
+}
+
+.thesis-exhibit .title {	
+	justify-content: center;
+}
+
+.exhibit-video {
+	background-video: url(../videos/thesis.mp4)
+}
+
+.fima {
+	background-image: url(../images/thesis-fisma.jpg)
+}
+
+.nowandthen {
+	background-image: url(../images/thesis-now-and-then.jpg)
+}
+
+
+/*  Footer  */
+
+footer {
+	background-color: #ffffff;
+	padding: 16px 24px;
+}
+
+#copyright {
+	padding-top: 32px;
+	font-size: 10px;
+	font-weight: 500;
+	color: #333333;
+	letter-spacing: .1pt;
 }
