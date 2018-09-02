@@ -42,6 +42,7 @@ a {
 	width: 100%;
 	margin: auto;
 	padding: 0px;
+	justify-content: center;
 }
 
 .image {
@@ -50,6 +51,12 @@ a {
 	margin: 32px 24px;
 }
 
+@media only screen and (max-width: 550px) {
+	.image {
+		width: 100%;
+		margin: 32px 0;
+		}
+}
 
 .course-container {
 	padding: 32px 72px;
@@ -63,7 +70,7 @@ a {
 	flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 633) {
+@media only screen and (max-width : 968px ){
 	.page-desktop {
 		flex-direction: column;
 	}
@@ -74,9 +81,22 @@ a {
 	padding: 32px 24px;
 }
 
+@media only screen and (max-width : 968px ){
+	.page-main {
+		width: 100%;
+		padding: 0;
+	}
+}
+
 .page-main h1 {
 	padding-top: 32px;
 	padding-bottom: 24px;
+}
+
+@media only screen and (max-width : 968px ){
+	.page-main h1 {
+		padding: 30px 50px 24px 50px;
+	}
 }
 
 .page-main p {
@@ -85,10 +105,24 @@ a {
 	font-weight: 400;
 }
 
+@media only screen and (max-width : 968px ){
+	.page-main p {
+		padding: 0 20% 0 50px;
+	}
+}
+
 .page-image {
 	height: 325px;
 	width: 100%;
 	background-size: cover;
+}
+
+@media only screen and (max-width : 968px ){
+	.page-image {
+		width: 90%;
+		margin: auto;
+		margin-top: 24px;
+	}
 }
 
 .page-list {
@@ -96,6 +130,14 @@ a {
 	display: inline-flex;
 	flex-direction: column;
 	padding-top: 32px;
+}
+
+@media only screen and (max-width : 968px ){
+	.page-list {
+		width: 100%;
+		height: auto;
+		padding-bottom: 24px;
+	}
 }
 
 .page-item {
@@ -106,23 +148,75 @@ a {
 	border: .25px solid #cccccc;
 }
 
+@media only screen and (max-width : 968px ){
+	.page-item {
+		width: 100%;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		marin: 0;
+		padding: 0;
+		border: none;
+	}
+}
+
 .item-image {
-	width: 35%;
+	width: 90%;
 	height: auto;
 	background-size: cover;
+	background-position: center;
 	margin: 16px;
 }
 
+@media only screen and (max-width : 968px ){
+	.item-image {
+		width: 95%;
+		flex-wrap: wrap;
+		height: 350px;
+	}
+}
+
+@media only screen and (max-width : 700px ){
+	.item-image {
+		width: 95%;
+		flex-wrap: wrap;
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width : 550px ){
+	.item-image {
+		width: 95%;
+		flex-wrap: wrap;
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width : 400px ){
+	.item-image {
+		width: 95%;
+		flex-wrap: wrap;
+		height: 175px;
+	}
+}
+
 .information {
-	width: 65%;
+	width: 99%;
 	display: inline-flex;
 	flex-direction: column;
 	justify-content: center;
+	margin: auto;
 }
 
 .information h2 {
 	font-size: 14.5px;
 	font-weight: 600;
+}
+
+@media only screen and (max-width : 968px ){
+	.information h2 {
+		padding: 0 32px;
+	}
 }
 
 .information p {
@@ -134,10 +228,22 @@ a {
 	letter-spacing: .45pt;
 }
 
+@media only screen and (max-width : 968px ){
+	.information p {
+		padding: 0 32px;
+	}
+}
+
 .information a {
 	font-size: 12px;
 	color: #3399CC;
 	letter-spacing: .5pt;
+}
+
+@media only screen and (max-width : 968px ){
+	.information a {
+		padding: 0 32px;
+	}
 }
 
 .padding-right {
@@ -148,11 +254,19 @@ a {
 	background-color: #cccccc;
 }
 
+@media only screen and (max-width : 968px ){
+	.light-grey {
+		background-color: #FFFFFF;
+	}
+}
+
 .title {
 	text-align: center;
 	width: 100%;
 	display: inline-flex;
+	justify-content: center;
 	align-items: center;
+	margin: auto;
 }
 
 /*  Top Navigation Bar  */
@@ -174,7 +288,12 @@ a {
 	align-items: center;
 }
 
-.logo-icon {
+@media only screen and (max-width: 550px) {
+	.logo {
+		display: none;
+		}
+}
+.logo .logo-icon {
 	width: auto;
 	height: 50px;
 	padding-left: 24px;
@@ -206,27 +325,76 @@ nav {
 	align-items: center;
 	width: auto;
 	padding-right: 24px;
-	
-	float: right;
-	align-content: flex-end;
 }
 
 .desktop-nav a {
 	padding-left: 16px;
 }
 
+@media only screen and (max-width : 968px ){
+	.desktop-nav {
+		display: none;
+	}
+}
+
 .mobile-nav {
-	
+	display: inline-flex;
+	width: 98%;
+	justify-content: flex-end;
+	align-items: center;
+	margin: auto;
+	padding: 0 24px;
 }
 
-.mob-nav-img {
-	
-}
-
-@media only screen and (max-width:2000px) {
+@media only screen and (min-width:960px) {
 	.mobile-nav {
 		display: none;
 	}
+}
+
+.mobile-nav nav {
+	display: inline-flex;
+	width: 60%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobile-nav nav ul {
+	display: inline-flex;
+	width: 99%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobile-nav nav a {
+	display: inline-flex;
+	width: auto;
+	height: 100%;
+	align-items: center;
+}
+
+@media only screen and (max-width: 550px) {
+	.mobile-nav nav {
+		width: 100%;
+		}
+}
+
+@media only screen and (max-width: 968px) {
+	.logo-mob {
+		display: none;
+		}
+}
+
+@media only screen and (max-width: 550px) {
+	.logo-mob {
+		display: inline-flex;
+		}
+}
+
+.mob-nav-img {
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 
@@ -237,9 +405,25 @@ nav {
 	width: 100%;
 }
 
+@media only screen and (max-width: 550px) {
+	.main-banner {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 16px;
+	}
+}
+
 .banner {
 	height: 378px;
 	background-image: url(../images/banner.jpg);
+	background-position: 90%;
+}
+
+@media only screen and (max-width: 550px) {
+	.banner {
+		height: 275px;
+		}
 }
 
 .banner-text {
@@ -279,6 +463,12 @@ nav {
 	background-image: url(../images/information-main.jpg);
 }
 
+@media only screen and (max-width: 550px) {
+	.practice {
+		display: none;
+		}
+}
+
 #citation {
 	padding-top: 32px;
 	font-size: 10px;
@@ -289,14 +479,35 @@ nav {
 
 .orientation {
 	background-image: url(../images/information-orientation.jpg);
+	background-position: center;
+}
+
+@media only screen and (max-width : 968px ){
+	.orientation {
+		background-image: url(../images/information-orientation-mobile.jpg);
+	}
 }
 
 .campus {
 	background-image: url(../images/information-campus.jpg);
+	background-position: center;
+}
+
+@media only screen and (max-width : 968px ){
+	.campus {
+		background-image: url(../images/information-campus-mobile.jpg);
+	}
 }
 
 .guest {
 	background-image: url(../images/information-guest-lecture.jpg);
+	background-position: center;
+}
+	
+@media only screen and (max-width : 968px ){
+	.guest {
+		background-image: url(../images/information-guest-lecture-mobile.jpg);
+	}
 }
 
 
@@ -306,6 +517,14 @@ nav {
 	width: 100%;
 	display: inline-flex;
 	flex-direction: column;
+	padding-bottom: 24px;
+}
+
+@media only screen and (max-width : 600px ){
+	.start-learning {
+		width: 100%;
+		background-color: #ffffff;
+	}
 }
 
 .desktop {
@@ -313,12 +532,70 @@ nav {
 	width: 100%;
 	flex-wrap: wrap;
 }
+
+.course-container {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 85%;
+	padding: 0;
+}
+
+.course-container h1 {
+	padding: 24px 0;
+}
+
+@media only screen and (max-width : 968px ){
+	.course-desktop {
+		justify-content: center;
+		align-items: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+}
+
+.course-mobile {
+	display: inline-flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+@media only screen and (min-width : 600px ){
+	.course-mobile {
+		display: none;
+	}
+}
+
+.course-mobile a {
+	background-color: #cccccc;
+	padding: 24px 16px;
+	margin-bottom: 8px;
+}
+
 .course {
 	background-color: #ffffff;
 	display: inline-flex;
 	flex-direction: column;
 	width: 30%;
+	height: 275px;
 	margin: 10px;
+}
+
+@media only screen and (max-width: 968px ){
+	.course {
+		width: 40%;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.course {
+		display: none;
+		}
 }
 
 .course-image {
@@ -326,6 +603,12 @@ nav {
 	height: 128.5px;
 	background-size: cover;
 	background-position: center;
+}
+
+@media only screen and (max-width: 968px) {
+	.course-image {
+		height: 175px;
+		}
 }
 
 .software {
@@ -389,6 +672,31 @@ nav {
 
 .exhibit-video {
 	background-video: url(../videos/thesis.mp4)
+}
+
+@media only screen and (max-width: 550px) {
+	.exhibit-video {
+		width: 99%;
+		height: auto;
+		}
+}
+
+@media only screen and (max-width: 550px) {
+	.thesis-exhibit .page-main h1 {
+		display: none;
+		}
+}
+
+@media only screen and (max-width: 550px) {
+	.thesis-exhibit .page-main p {
+		display: none;
+		}
+}
+
+@media only screen and (max-width: 550px) {
+	.thesis-exhibit .page-list {
+		display: none;
+		}
 }
 
 .fima {

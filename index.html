@@ -4,6 +4,7 @@
 <meta charset="UTF-8">	
 <title>Colmar Academy</title>
 <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
 <link href="resources/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -17,23 +18,28 @@
 		
 		<header class="top-nav">
 			<div class="logo">
-				<img class="logo-icon" src="resources/images/ic-logo.svg" alt="logo">
+				<img class="logo-icon" src="resources/images/ic-logo.svg" alt="logo"/>
 				<h1>COLMAR<span>ACADEMY</span></h1>
 			</div>
 			<div class="desktop-nav">
 				<nav>
-					<a href="#">On campus</a>
-					<a href="#">Online</a>
-					<a href="#">For companies</a>
-					<a href="#">Sign in</a>
+					<ul role="presentation">
+						<a href="#">On campus</a>
+						<a href="#">Online</a>
+						<a href="#">For companies</a>
+						<a href="#">Sign in</a>
+					</ul>
 				</nav>
 			</div>
 			
 			<div class ="mobile-nav">
 				<nav>
-					<a href="#"><img class="mob-nav-img campus" src="resources/images/ic-on-campus.svg" alt="campus icon/button"></a>
-					<a href="#"><img class="mob-nav-img online" src="resources/images/ic-online.svg" alt="online icon/button"></a>
-					<a href="#"><img class="mob-nav-img login" src="resources/images/ic-login.svg" alt="login icon/button"></a>
+					<ul role="presentation">
+						<img class="logo-icon logo-mob" src="resources/images/ic-logo.svg" alt="logo">
+						<a href="#"><img class="mob-nav-img campus-icon" src="resources/images/ic-on-campus.svg" alt="campus icon/button"></a>
+						<a href="#"><img class="mob-nav-img online" src="resources/images/ic-online.svg" alt="online icon/button"></a>
+						<a href="#"><img class="mob-nav-img login" src="resources/images/ic-login.svg" alt="login icon/button"></a>
+					</ul>
 				</nav>
 			</div>
 		</header>
@@ -53,7 +59,7 @@
 		<!--  Academy Page  -->
 		
   <div class="page-desktop">
-			<div class="page-main">
+			<div class="page-main practice">
 				<div class="academy page-image">
 				</div>
 				<h1>It doesn't hurt to keep practicing</h1>
@@ -96,62 +102,71 @@
 		<div class="start-learning">
 		  <div class="course-container">
 			<h1 class="title">Start Learning</h1>
-				<div class="course-desktop">
-					<div class="course">
-						<div class="course-image software">
-						</div>
-						<div class="details">
-							<h2>Software engineering</h2>
-							<h3>COURSES</h3>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
-						</div>
+			<div class="course-desktop">
+				<div class="course">
+					<div class="course-image software">
 					</div>
-					<div class="course">
-						<div class="course-image arts">
-						</div>
-						<div class="details">
-							<h2>Computer Art</h2>
-							<h3>COURSES</h3>
-							<p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
-						</div>
-					</div>
-					<div class="course">
-						<div class="course-image design">
-						</div>
-						<div class="details">
-							<h2>Design</h2>
-							<h3>COURSES</h3>
-							<p>User Experience Design, User Research, Visual Design</p>
-						</div>
-					</div>
-					<div class="course">
-						<div class="course-image data">
-						</div>
-						<div class="details">
-							<h2>Data</h2>
-							<h3>COURSES</h3>
-							<p>Data Science, Big Data, SQL, Data Visualization</p>
-						</div>
-					</div>
-					<div class="course">
-						<div class="course-image business">
-						</div>
-						<div class="details">
-							<h2>Business</h2>
-							<h3>COURSES</h3>
-							<p>Produt Development, Business Development, Startup</p>
-						</div>
-					</div>
-					<div class="course">
-						<div class="course-image marketing">
-						</div>
-						<div class="details">
-							<h2>Marketing</h2>
-							<h3>COURSES</h3>
-							<p>Analytics, Content Marketing, Mobile Marketing</p>
-						</div>
+					<div class="details">
+						<h2>Software engineering</h2>
+						<h3>COURSES</h3>
+						<p>Web Development, Mobile Development, iOT, APIs</p>
 					</div>
 				</div>
+				<div class="course">
+					<div class="course-image arts">
+					</div>
+					<div class="details">
+						<h2>Computer Art</h2>
+						<h3>COURSES</h3>
+						<p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-image design">
+					</div>
+					<div class="details">
+						<h2>Design</h2>
+						<h3>COURSES</h3>
+						<p>User Experience Design, User Research, Visual Design</p>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-image data">
+					</div>
+					<div class="details">
+						<h2>Data</h2>
+						<h3>COURSES</h3>
+						<p>Data Science, Big Data, SQL, Data Visualization</p>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-image business">
+					</div>
+					<div class="details">
+						<h2>Business</h2>
+						<h3>COURSES</h3>
+						<p>Produt Development, Business Development, Startup</p>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-image marketing">
+					</div>
+					<div class="details">
+						<h2>Marketing</h2>
+						<h3>COURSES</h3>
+						<p>Analytics, Content Marketing, Mobile Marketing</p>
+					</div>
+				</div>
+			</div>
+			<div class="course-mobile">
+				<a href="#">Software engineering</a>
+				<a href="#">Computer art</a>
+				<a href="#">Design</a>
+				<a href="#">Data</a>
+				<a href="#">Business</a>
+				<a href="#">Marketing</a>
+			</div>
+			  
 		  </div>
 		</div>
 		
@@ -173,6 +188,7 @@
 				<div class="information ">
 					<h2>Fisma: Design and Prototype</h2>
 					<p>Designer showcase of new prototype product</p>
+					<a href="#">Read more</a>
 				</div>
 			</div>
 			<div class="page-item">
@@ -181,6 +197,7 @@
 				<div class="information">
 					<h2>Now and then</h2>
 					<p>Research study about New York</p>
+					<a href="#">Read more</a>
 				</div>
 			</div>
 		</div>
